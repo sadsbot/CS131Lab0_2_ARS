@@ -4,7 +4,7 @@
 *
 * @author Andrew Ross-Sermons
 * @version 0.1
-* CS131; Lab 0.1
+* CS131; Lab 0.2
 * Spring 2023
 */
 

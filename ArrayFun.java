@@ -11,7 +11,7 @@ public class ArrayFun {
 	Square[] myArray;
 	
 	/**
-	 * Default constructor to fill myArray with square objects.
+	 * Default constructor to fill myArray with 6 square objects.
 	 */
 	public ArrayFun() {
 		myArray = new Square[6];
@@ -19,6 +19,18 @@ public class ArrayFun {
 			myArray[i] = new Square(i);
 		}//end for
 	}//end ArrayFun (Default Constructor)
+	
+	/**
+	 * Preferred constructor to fill myArray with specified number of square objects.
+	 * 
+	 * @param length the length of the array.
+	 */
+	public ArrayFun(int length) {
+		myArray = new Square[length];
+		for(int i = 0; i < myArray.length; i++) {
+			myArray[i] = new Square(i);
+		}//end for
+	}//end ArrayFun (Preferred Constructor);
 	
 	/**
 	 * Prints the area of every Square in myArray[] from front to back.
@@ -42,11 +54,11 @@ public class ArrayFun {
 	 * Prints the sum of all Square areas in myArray.
 	 */
 	public void sum() {
-		int areaSum = 0;
+		double areaSum = 0;
 		for(Square s : myArray) {
 			areaSum += s.area();
 		}
-		System.out.printf("\nSum of all Square areas: %2.f", areaSum);
+		System.out.printf("\nSum of all Square areas: %.2f", areaSum);
 	}//end sum
 	
 	/**
